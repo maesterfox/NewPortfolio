@@ -4,7 +4,7 @@ import { CgWorkAlt } from "react-icons/cg";
 // import { LuGraduationCap } from "react-icons/lu";
 import foxmgmt from "@/public/foxmgmt.jpg";
 import foxexpense from "@/public/foxexpense.jpg";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import foxtech from "@/public/foxtech.jpg";
 
 export const links = [
   {
@@ -123,7 +123,7 @@ export const projectsData = [
   {
     title: "Fox ProMGMT",
     description:
-      "Fox ProMGMT is a full-stack project management system built with GraphQL, Express, MongoDB, React, and Apollo. It provides a comprehensive platform for managing projects, clients, and tasks efficiently.",
+      "Fox ProMGMT is a full-stack project management system. It provides a comprehensive platform for managing projects, clients, and tasks efficiently.",
     tags: ["GraphQL", "Express", "MongoDB", "React", "Apollo"],
     imageUrl: foxmgmt,
   },
@@ -131,9 +131,16 @@ export const projectsData = [
   {
     title: "Expense Tracker App",
     description:
-      "Full-stack expense tracker application built with the MERN stack and Apollo GraphQL. Allows users to track expenses, manage budgets, and analyze spending habits.",
-    tags: ["MERN", "Apollo GraphQL", "Expense Tracker", "Full-stack"],
+      "Full-stack expense tracker application. Allows users to track expenses, manage budgets, and analyze spending habits.",
+    tags: ["MERN", "Apollo", "GraphQL", "Tailwind", "Authentication"],
     imageUrl: foxexpense,
+  },
+  {
+    title: "FoxTech",
+    description:
+      "FoxTech is a next-generation IT Helpdesk. It provides a streamlined and intuitive interface for managing support tickets, user requests, and knowledge base articles.",
+    tags: ["Next.js", "Tailwind", "Supabase", "Authentication"],
+    imageUrl: foxtech,
   },
 ] as const;
 
