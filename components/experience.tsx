@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { motion, AnimatePresence } from "framer-motion";
 
 type ShowResponsibilitiesState = {
   [key: number]: boolean;
@@ -38,7 +39,7 @@ const Experience: React.FC = () => {
             contentStyle={{
               background:
                 theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-              boxShadow: "none",
+              boxShadow: "1px 1px 3px rgba(0, 0, 0, 0.1)",
               border: "1px solid rgba(0, 0, 0, 0.05)",
               textAlign: "left",
               padding: "1.3rem 2rem",
@@ -82,13 +83,21 @@ const Experience: React.FC = () => {
                     ? "Hide Details"
                     : "View Details"}
                 </button>
-                {showResponsibilities[index] && (
-                  <ul className="list-disc pl-6 mt-2">
-                    {item.responsibilities.map((resp, respIndex) => (
-                      <li key={respIndex}>{resp}</li>
-                    ))}
-                  </ul>
-                )}
+                <AnimatePresence>
+                  {showResponsibilities[index] && (
+                    <motion.ul
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.5 }}
+                      className="list-disc pl-6 mt-2"
+                    >
+                      {item.responsibilities.map((resp, respIndex) => (
+                        <li key={respIndex}>{resp}</li>
+                      ))}
+                    </motion.ul>
+                  )}
+                </AnimatePresence>
               </>
             )}
           </VerticalTimelineElement>
