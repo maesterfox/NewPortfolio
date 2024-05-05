@@ -17,32 +17,36 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        An experienced software developer based in Derbyshire, England. My
-        journey in the tech industry began after transitioning from a career in
-        physical fitness in Portland, Oregon. I initially entered the tech scene
-        with an internship at Intel's Hillsboro Campus and have since thrived in
-        various contract roles since moving back to the UK in 2018. My
-        experiences across diverse environments have significantly broadened my
-        technical and adaptive skills.
+        I'm David Fox, originally from Edinburgh but now residing in Derbyshire,
+        England. My journey in technology began in the United States, where I
+        moved for university and earned a Bachelor of Science in Computer
+        Science. This led to a transformative internship at Intel's Hillsboro
+        Campus. During my time at university, I also worked as a personal
+        trainer, blending my passion for health and fitness with generating a
+        steady income. Since returning to the UK in 2018, I have taken on
+        various challenging contract roles that have not only sharpened my
+        technical expertise but also bolstered my capacity to adapt and excel in
+        rapidly changing environments.
       </p>
+
       <p className="mb-3">
-        Driven by a passion for cutting-edge technologies and innovative
-        software development practices, I am now seeking a permanent position
-        that allows me to leverage my robust background in a dynamic,
-        collaborative setting. I am particularly interested in opportunities
-        that align with my commitment to continuous learning and
-        customer-centric development.
+        I am passionate about utilizing cutting-edge technologies to create
+        innovative software solutions. Currently, I am looking for a permanent
+        position where I can bring my strong background into play in a dynamic,
+        team-oriented setting. I'm particularly excited about roles that promote
+        continuous learning and a focus on delivering outstanding results to
+        customers.
       </p>
       <p>
-        Outside of my professional life, I am passionate about health and
-        fitness, which serves as a perfect counterbalance to the sedentary
-        nature of software development. In addition to staying active, I enjoy
-        playing Warcraft, exploring new cities across the UK, and planning
-        extended adventures across Europe. These activities not only enrich my
-        personal life but also enhance my creative thinking and problem-solving
-        skills, which are crucial to my professional development.
+        When I’m not coding, you’ll find me indulging in my passion for health
+        and fitness, a vital part of my life that balances the sedentary nature
+        of my profession. I also enjoy unwinding with a game of Warcraft,
+        traveling to explore new cities in the UK, and planning my next
+        adventure in Europe. These activities not only keep me refreshed but
+        also fuel my creativity and problem-solving skills, which are crucial
+        for my professional success.
       </p>
     </motion.section>
   );

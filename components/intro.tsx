@@ -63,14 +63,15 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm David Fox.</span> A seasoned{" "}
-        <span className="font-bold">Full-Stack Developer</span> with over{" "}
-        <span className="font-bold">five years</span> of immersive experience, I
-        thrive on crafting impactful digital solutions from the ground up.
-        Specializing in <span className="underline">React and Next.js</span>, I
-        am dedicated to building intuitive, scalable{" "}
-        <span className="italic">websites and applications</span> that enhance
-        user engagement and drive business success.
+        <span className="font-bold">Greetings, I am David Fox.</span> An adept{" "}
+        <span className="font-bold">Full-Stack Developer</span> endowed with
+        over <span className="font-bold">five years</span> of profound
+        experience, I excel in the artistry of sculpting robust digital
+        architectures. Specialized in{" "}
+        <span className="underline">React and Next.js</span>, my dedication
+        extends to engineering seamless, scalable{" "}
+        <span className="italic">web applications and platforms</span> that
+        elevate user experience and drive enterprise success.
       </motion.h1>
 
       <motion.div
