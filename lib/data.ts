@@ -198,7 +198,7 @@ export const projectsData = [
   {
     title: "FoxTech",
     description:
-      "FoxTech is a next-generation IT Helpdesk. It provides a streamlined and intuitive interface for managing support tickets, user requests, and knowledge base articles leveraging AWS cloud services.",
+      "FoxTech is an IT Helpdesk for managing support tickets, user requests, and knowledge base articles leveraging AWS cloud services.",
     tags: ["Next.js", "Tailwind", "Supabase", "Authentication", "AWS EC2"],
     imageUrl: foxtech,
     url: "https://helpdesk.davidfoxdev.co.uk",

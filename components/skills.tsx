@@ -5,13 +5,41 @@ import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
+const directions = ["top", "bottom", "left", "right"];
+
+const getRandomDirection = () => {
+  const randomIndex = Math.floor(Math.random() * directions.length);
+  return directions[randomIndex];
+};
+
+const getPositionOffset = (direction: string) => {
+  switch (direction) {
+    case "top":
+      return { x: 0, y: -200 };
+    case "bottom":
+      return { x: 0, y: 200 };
+    case "left":
+      return { x: -200, y: 0 };
+    case "right":
+      return { x: 200, y: 0 };
+    default:
+      return { x: 0, y: 0 };
+  }
+};
+
 const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
+  initial: (index: number) => {
+    const direction = getRandomDirection(); // Get random direction for each item
+    const positionOffset = getPositionOffset(direction);
+    return {
+      opacity: 0,
+      x: positionOffset.x,
+      y: positionOffset.y,
+    };
   },
   animate: (index: number) => ({
     opacity: 1,
+    x: 0,
     y: 0,
     transition: {
       delay: 0.05 * index,
