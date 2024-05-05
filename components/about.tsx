@@ -19,34 +19,30 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        I'm David Fox, originally from Edinburgh but now residing in Derbyshire,
-        England. My journey in technology began in the United States, where I
-        moved for university and earned a Bachelor of Science in Computer
-        Science. This led to a transformative internship at Intel's Hillsboro
-        Campus. During my time at university, I also worked as a personal
-        trainer, blending my passion for health and fitness with generating a
-        steady income. Since returning to the UK in 2018, I have taken on
-        various challenging contract roles that have not only sharpened my
-        technical expertise but also bolstered my capacity to adapt and excel in
-        rapidly changing environments.
+        Originally from Edinburgh and now based in Derbyshire, England, my
+        journey in technology started at the University of Portland in the US,
+        where I earned a Bachelor of Science in Computer Science. This was
+        followed by a pivotal internship at Intel's Hillsboro Campus, where I
+        honed my skills in real-world tech environments.
       </p>
-
       <p className="mb-3">
-        I am passionate about utilizing cutting-edge technologies to create
-        innovative software solutions. Currently, I am looking for a permanent
-        position where I can bring my strong background into play in a dynamic,
-        team-oriented setting. I'm particularly excited about roles that promote
-        continuous learning and a focus on delivering outstanding results to
-        customers.
+        Since returning to the UK in 2018, I have embraced challenging contract
+        roles with industry giants like Aviva, Centrica, and Amazon, refining my
+        expertise with <strong>Typescript, React, Node.js, and AWS</strong>.
+        These roles have not only enhanced my technical acumen but also
+        fortified my ability to adapt and innovate within dynamic and evolving
+        tech landscapes. I'm currently on the lookout for a permanent position
+        where I can bring my extensive skills to a team-focused and innovative
+        setting, emphasizing continuous improvement and exceptional
+        customer-centric solutions.
       </p>
-      <p>
-        When I’m not coding, you’ll find me indulging in my passion for health
-        and fitness, a vital part of my life that balances the sedentary nature
-        of my profession. I also enjoy unwinding with a game of Warcraft,
-        traveling to explore new cities in the UK, and planning my next
-        adventure in Europe. These activities not only keep me refreshed but
-        also fuel my creativity and problem-solving skills, which are crucial
-        for my professional success.
+      <p className="mb-3">
+        Away from the keyboard, my passion for health and fitness helps
+        counterbalance the sedentary nature of programming. Whether exploring
+        Azeroth in Warcraft or traversing new cities across the UK and planning
+        adventures throughout Europe, I harness these activities to rejuvenate
+        my mind and foster the creativity and problem-solving skills vital for
+        my professional achievements.
       </p>
     </motion.section>
   );
