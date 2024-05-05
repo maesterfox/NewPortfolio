@@ -62,10 +62,20 @@ const Experience: React.FC = () => {
             <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
               {item.description}
             </p>
+            <ul className="flex flex-wrap mt-4 gap-2">
+              {item.tech_stack.map((tech, techIndex) => (
+                <li
+                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  key={techIndex}
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
             {item.responsibilities && item.responsibilities.length > 0 && (
               <>
                 <button
-                  className="btn mt-2"
+                  className="btn mt-2 border-none text-gray-700 dark:text-white/75 dark:hover:text-white/95 dark:hover:bg-black/[0.2]"
                   onClick={() => toggleResponsibilities(index)}
                 >
                   {showResponsibilities[index]
