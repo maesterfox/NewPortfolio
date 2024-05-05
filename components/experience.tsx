@@ -59,6 +59,7 @@ const Experience: React.FC = () => {
           >
             <h3 className="font-semibold capitalize">{item.title}</h3>
             <p className="font-normal !mt-0">{item.location}</p>
+            <p className="font-italic">{item.date}</p>
             <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
               {item.description}
             </p>
@@ -75,12 +76,12 @@ const Experience: React.FC = () => {
             {item.responsibilities && item.responsibilities.length > 0 && (
               <>
                 <button
-                  className="btn mt-2 border-none text-gray-700 dark:text-white/75 dark:hover:text-white/95 dark:hover:bg-black/[0.2]"
+                  className="btn mt-2 bg-white border border-gray-200 shadow-sm rounded-xl text-gray-700 dark:text-white/75 dark:hover:text-white/95 dark:hover:bg-black/[0.2]"
                   onClick={() => toggleResponsibilities(index)}
                 >
                   {showResponsibilities[index]
-                    ? "Hide Responsibilities"
-                    : "View Responsibilities"}
+                    ? "Hide Details"
+                    : "View Details"}
                 </button>
                 {showResponsibilities[index] && (
                   <ul className="list-disc pl-6 mt-2">

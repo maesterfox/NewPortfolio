@@ -48,7 +48,12 @@ export default function Project({
             ))}
           </ul>
         </div>
-        <a href={url} target="_blank" rel="noopener noreferrer">
+        <a
+          href={url}
+          target="_blank"
+          title="projectImg"
+          rel="noopener noreferrer"
+        >
           <Image
             src={imageUrl}
             alt="Project I worked on"
