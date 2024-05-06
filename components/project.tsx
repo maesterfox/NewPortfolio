@@ -50,7 +50,7 @@ const Modal: React.FC<ModalProps> = ({ show, onClose, title, content }) => {
         </ul>
         <button
           onClick={onClose}
-          className="btn bg-gray-100 border border-gray-200 shadow-sm rounded-xl px-4 py-2 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white/75 dark:hover:text-white/95"
+          className="btn bg-gray-100 border border-gray-200 shadow-sm rounded-xl px-4 py-2 text-black hover:bg-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white/75 dark:hover:text-white/95"
         >
           Close
         </button>

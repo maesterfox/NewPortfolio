@@ -34,10 +34,10 @@ export default function Skills() {
           <h2 className="text-2xl font-bold text-white-800 mt-10 mb-4 capitalize">
             {category.replace(/_/g, " ")}
           </h2>
-          <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-900 dark:text-gray-200">
+          <ul className="flex flex-wrap justify-center gap-2 text-lg">
             {skillsData[category].map((skill, index) => (
               <motion.li
-                className="glass-effect rounded-xl px-5 py-3"
+                className="bg-white border border-gray-200 shadow-sm rounded-xl px-5 py-3  hover:bg-gray-200 dark:hover:bg-gray-700 dark:bg-black/10 dark:border-gray-700 dark:text-white/80"
                 key={index}
                 variants={fadeInAnimationVariants}
                 initial="initial"
