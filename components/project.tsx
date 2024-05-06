@@ -37,10 +37,10 @@ const Modal: React.FC<ModalProps> = ({ show, onClose, title, content }) => {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed inset-0 z-60 flex items-center justify-center bg-black bg-opacity-50">
       <div
         ref={modalRef}
-        className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg w-80 sm:w-96"
+        className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg w-80 sm:w-96 z-50"
       >
         <h2 className="text-xl font-semibold mb-4">{title}</h2>
         <ul className="list-disc pl-6 mb-4">
@@ -96,7 +96,7 @@ export default function Project({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="glass-effect group mb-3 sm:mb-8 last:mb-0"
+      className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-300 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
