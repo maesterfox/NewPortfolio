@@ -185,6 +185,13 @@ export const projectsData = [
     tags: ["GraphQL", "Express", "MongoDB", "React", "Apollo"],
     imageUrl: foxmgmt,
     url: "https://foxmgmt.onrender.com",
+    functionality: [
+      "Project Management: Create, view, update, and delete projects with ease. Track project progress and status effortlessly.",
+      "Client Management: Manage clients by adding, editing, and removing client information. Associate clients with projects for better organization.",
+      "Task Management: Break down projects into tasks and assign them to team members. Monitor task completion and deadlines effectively.",
+      "GraphQL API: Utilize the power of GraphQL for flexible and efficient data querying and manipulation.",
+      "Responsive UI: The user interface is designed to be responsive, ensuring a seamless experience across various devices and screen sizes.",
+    ],
   },
 
   {
@@ -194,6 +201,15 @@ export const projectsData = [
     tags: ["MERN", "Apollo", "GraphQL", "Tailwind", "Authentication"],
     imageUrl: foxexpense,
     url: "https://expensetracker-2nhh.onrender.com",
+    functionality: [
+      "Learn type definitions and resolvers for defining GraphQL schema and data fetching logic",
+      "Mutations for modifying data in the GraphQL API and establishing graph relations",
+      "Authentication with Passport.js and MongoDB session store",
+      "Global state management with Apollo Client",
+      "Error handling both on the server and on the client",
+      "Deployment made easy with a platform called Render",
+      "Cron jobs for scheduled tasks and automation",
+    ],
   },
   {
     title: "FoxTech",
@@ -202,6 +218,15 @@ export const projectsData = [
     tags: ["Next.js", "Tailwind", "Supabase", "Authentication", "AWS EC2"],
     imageUrl: foxtech,
     url: "https://helpdesk.davidfoxdev.co.uk",
+    functionality: [
+      "Ticket Management: Create, track, and resolve tickets efficiently with categories, priorities, and assigned agents.",
+      "User Portal: Users can submit tickets, track their status, and access knowledge base articles through a dedicated portal.",
+      "Knowledge Base: Build a comprehensive knowledge base with searchable articles, categories, and user feedback.",
+      "Agent Tools: Assigned agents can manage their workload, collaborate on tickets, and stay informed with notifications.",
+      "Modern Interface: Tailwind CSS ensures a beautiful and responsive UI that adapts to any device.",
+      "Realtime Updates: Supabase powers a real-time experience, keeping everyone informed with instant updates.",
+      "Scalable: FoxTech is built with scalability in mind, ready to grow with your needs.",
+    ],
   },
   {
     title: "Super Portfolio",
@@ -210,6 +235,13 @@ export const projectsData = [
     tags: ["React", "Tailwind", "Custom CSS"],
     imageUrl: superPort,
     url: "https://super.davidfoxdev.co.uk",
+    functionality: [
+      "Dynamic Gallery: Experience a curated dynamic gallery showcasing creative designs and AI-generated images, which adapts based on user interactions and preferences.",
+      "Responsive Design: Built with modern web technologies to ensure a seamless and responsive user experience across all devices and screen sizes.",
+      "Real-Time Updates: Utilize WebSocket technology for real-time updates to the gallery, ensuring users see the most current and innovative designs as they are created.",
+      "Accessibility Features: Ensures that all users, regardless of ability, can navigate and interact with the portfolio effectively, incorporating ARIA attributes and keyboard navigability.",
+      "Performance Optimized: Implements lazy loading and modern image formats to ensure fast loading times and optimal performance without compromising on visual quality.",
+    ],
   },
 ] as const;
 
