@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { FaBlog } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -47,6 +48,16 @@ const Modal: React.FC<ModalProps> = ({ show, onClose, title, content }) => {
           {content.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
+          <a
+            className="blog-button justify-center bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.05rem] rounded-full dark:hover:bg-slate-600 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80"
+            href="https://newblog-inia.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="My Blog"
+          >
+            <FaBlog />
+            Full Build Blog
+          </a>
         </ul>
         <button
           onClick={onClose}
@@ -78,16 +89,6 @@ export default function Project({
 
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
-
-  // Close modal on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      if (showModal) closeModal();
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [showModal]);
 
   return (
     <motion.div

@@ -7,6 +7,7 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { FaBlog } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import profile from "/public/profile.png";
@@ -34,11 +35,11 @@ export default function Intro() {
             <Image
               src={profile}
               alt="David Fox Portrait"
-              width="300"
-              height="300"
+              width="150"
+              height="150"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.15rem] border-white shadow-xl"
+              className="h-30 w-30 rounded-full object-cover  border-white shadow-xl"
             />
           </motion.div>
 
@@ -63,14 +64,17 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I am David Fox,</span> a skilled{" "}
-        <span className="font-bold">Full-Stack Developer</span> with more than{" "}
-        <span className="font-bold">five years</span> of in-depth experience. I
-        specialize in crafting robust digital solutions, with a keen expertise
-        in <span className="underline">React and Next.js</span>. My commitment
-        is focused on designing seamless, scalable
-        <span className="italic">web applications and platforms</span> that
-        enhance user experiences and contribute to the success of businesses.
+        <span className="font-bold">Hi, I'm David Fox,</span> an accomplished{" "}
+        <span className="font-bold">Full-Stack Developer</span> specializing in
+        the MERN stack with a deep command of{" "}
+        <span className="underline">TypeScript</span>. With over{" "}
+        <span className="font-bold">five years</span> of experience, I focus on
+        developing{" "}
+        <span className="italic">robust and scalable web applications</span>{" "}
+        using <span className="underline">React</span> and{" "}
+        <span className="underline">Next.js</span>. My goal is to enhance user
+        experiences and drive business success through thoughtful and efficient
+        web solutions.
       </motion.h1>
 
       <motion.div
@@ -120,6 +124,16 @@ export default function Intro() {
           title="GitHub"
         >
           <FaGithubSquare />
+        </a>
+
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://newblog-inia.onrender.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="My Blog"
+        >
+          <FaBlog />
         </a>
       </motion.div>
     </section>
