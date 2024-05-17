@@ -184,7 +184,7 @@ export const projectsData = [
       "A Full-stack project management system. It provides a comprehensive platform for managing projects, clients, and tasks efficiently.",
     tags: ["GraphQL", "Express", "MongoDB", "React", "Apollo"],
     imageUrl: foxmgmt,
-    url: "https://foxmgmt.onrender.com",
+    url: "https://foxmgmt.davidfoxdev.co.uk/",
     functionality: [
       "Project Management: Create, view, update, and delete projects with ease. Track project progress and status effortlessly.",
       "Task Management: Break down projects into tasks and assign them to team members. Monitor task completion and deadlines effectively.",
