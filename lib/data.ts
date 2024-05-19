@@ -193,7 +193,7 @@ export const projectsData = [
       "Full-stack expense tracker application. Allows users to track expenses, manage budgets, and analyze spending habits.",
     tags: ["MERN", "Apollo", "GraphQL", "Tailwind", "Authentication"],
     imageUrl: foxexpense,
-    url: "https://expensetracker-2nhh.onrender.com",
+    url: "https://expense.davidfoxdev.co.uk",
     functionality: [
       "Learn type definitions and resolvers for defining GraphQL schema and data fetching logic",
       "Mutations for modifying data in the GraphQL API and establishing graph relations",
