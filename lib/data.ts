@@ -6,6 +6,7 @@ import foxmgmt from "@/public/foxmgmt.jpg";
 import foxexpense from "@/public/foxexpense.jpg";
 import foxtech from "@/public/foxtech.jpg";
 import superPort from "@/public/super.jpg";
+import jobApp from "@/public/jobApp.jpg";
 
 export const links = [
   {
@@ -174,16 +175,25 @@ export const experiencesData: ExperiencesData = [
 
 export const projectsData = [
   {
-    title: "Fox ProMGMT",
+    title: "Job List App",
     description:
-      "A Full-stack project management system. It provides a comprehensive platform for managing projects, clients, and tasks efficiently.",
-    tags: ["GraphQL", "Express", "MongoDB", "React", "Apollo"],
-    imageUrl: foxmgmt,
-    url: "https://foxmgmt.davidfoxdev.co.uk/",
+      "A full-stack application for managing job listings. Users can add, edit, delete, and view job listings with detailed information.",
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "JSON-Server",
+      "Tailwind CSS",
+      "Vite",
+    ],
+    imageUrl: jobApp, // Replace with the actual image path or URL
+    url: "https://joblist.davidfoxdev.co.uk",
     functionality: [
-      "Project Management: Create, view, update, and delete projects with ease.",
-      "Task Management: Break down projects into tasks and assign them to team members.",
-      "GraphQL API: Utilize the power of GraphQL for flexible and efficient data querying and manipulation.",
+      "Create, read, update, and delete job listings using a RESTful API",
+      "Front-end built with React and styled with Tailwind CSS",
+      "Backend server using Node.js and Express",
+      "Data persistence with JSON-Server for quick prototyping",
+      "Proxy setup in Vite for seamless API integration",
     ],
   },
 
@@ -224,6 +234,19 @@ export const projectsData = [
     functionality: [
       "Accessibility Features: Enhances usability for all users with ARIA attributes and keyboard navigability, ensuring effective interaction.",
       "Performance Optimized: Utilizes lazy loading and modern image formats for fast loading times and optimal performance without sacrificing visual quality.",
+    ],
+  },
+  {
+    title: "Fox ProMGMT",
+    description:
+      "A Full-stack project management system. It provides a comprehensive platform for managing projects, clients, and tasks efficiently.",
+    tags: ["GraphQL", "Express", "MongoDB", "React", "Apollo"],
+    imageUrl: foxmgmt,
+    url: "https://foxmgmt.davidfoxdev.co.uk/",
+    functionality: [
+      "Project Management: Create, view, update, and delete projects with ease.",
+      "Task Management: Break down projects into tasks and assign them to team members.",
+      "GraphQL API: Utilize the power of GraphQL for flexible and efficient data querying and manipulation.",
     ],
   },
 ] as const;
