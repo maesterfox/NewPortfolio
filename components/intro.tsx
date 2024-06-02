@@ -99,7 +99,7 @@ export default function Intro() {
 
         <a
           className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 dark:hover:bg-gray-600 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="https://drive.google.com/uc?export=download&id=1X5cFAcY4VtM6D8_XA33xYD8GmHWW7m7i"
+          href="https://drive.google.com/file/d/16mQBcThaMuMTItBV18HPx7iEkIf_ZA0j/view?usp=drive_link"
           rel="noopener noreferrer"
         >
           Download CV{" "}
