@@ -2,6 +2,9 @@
 
 Welcome to my personal portfolio project. This project is built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, **Context API**, and **Next.js Server Actions**. Below you'll find instructions on how to set up, run, and deploy the project, as well as a brief overview of the structure and key features.
 
+![Screenshot 1](./public/port1.png)
+
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -105,6 +108,10 @@ Here's a brief overview of the project's structure:
 - **Tailwind CSS**: Provides utility-first CSS for rapid UI development.
 - **Context API**: Manages global state efficiently.
 - **Server Actions**: Leverages Next.js server-side capabilities for improved performance and security.
+
+ ![Screenshot 1](./public/port2.png)
+![Screenshot 1](./public/port3.png)
+
 
 ## Contributing
 
