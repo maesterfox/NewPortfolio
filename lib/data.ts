@@ -7,6 +7,7 @@ import foxexpense from "@/public/foxexpense.jpg";
 import foxtech from "@/public/foxtech.jpg";
 import superPort from "@/public/super.jpg";
 import jobApp from "@/public/jobApp.jpg";
+import foxForms from "@/public/foxForms.jpg";
 
 export const links = [
   {
@@ -175,6 +176,44 @@ export const experiencesData: ExperiencesData = [
 
 export const projectsData = [
   {
+    title: "Expense Tracker App",
+    description:
+      "Full-stack expense tracker application. Allows users to track expenses, manage budgets, and analyze spending habits.",
+    tags: ["MERN", "Apollo", "GraphQL", "Tailwind", "Authentication"],
+    imageUrl: foxexpense,
+    url: "https://expense.davidfoxdev.co.uk",
+    functionality: [
+      "Learn type definitions and resolvers for defining GraphQL schema and data fetching logic",
+      "Mutations for modifying data in the GraphQL API and establishing graph relations",
+      "Authentication with Passport.js and MongoDB session store",
+      "Cron jobs for scheduled tasks and automation",
+    ],
+  },
+  {
+    title: "Fox Forms",
+    description:
+      "Form builder app enabling users to create and share custom forms with drag-and-drop functionality and PostgreSQL backend.",
+    tags: [
+      "Next.js",
+      "Dnd-Kit",
+      "Typescript",
+      "PostgreSQL",
+      "Prisma",
+      "Authentication",
+    ],
+    imageUrl: foxForms,
+    url: "https://foxforms.davidfoxdev.co.uk",
+    functionality: [
+      "Drag-and-Drop Form Builder: Intuitive drag-and-drop interface to create forms with various field types.",
+      "Form Field Customization: Easily add and customize fields such as Text, Number, Select, Date, Checkbox, and Textarea.",
+      "Form Preview: Preview forms before publishing to ensure they meet requirements.",
+      "Form Sharing: Share forms via a unique URL.",
+      "Form Validation: Ensure data integrity with built-in form validation.",
+      "Form Statistics: Track form visits and submissions with detailed analytics.",
+      "PostgreSQL Backend: Robust backend with PostgreSQL and Prisma ORM for data management.",
+    ],
+  },
+  {
     title: "Job List App",
     description:
       "A full-stack application for managing job listings. Users can add, edit, delete, and view job listings with detailed information.",
@@ -196,21 +235,6 @@ export const projectsData = [
       "Proxy setup in Vite for seamless API integration",
     ],
   },
-
-  {
-    title: "Expense Tracker App",
-    description:
-      "Full-stack expense tracker application. Allows users to track expenses, manage budgets, and analyze spending habits.",
-    tags: ["MERN", "Apollo", "GraphQL", "Tailwind", "Authentication"],
-    imageUrl: foxexpense,
-    url: "https://expense.davidfoxdev.co.uk",
-    functionality: [
-      "Learn type definitions and resolvers for defining GraphQL schema and data fetching logic",
-      "Mutations for modifying data in the GraphQL API and establishing graph relations",
-      "Authentication with Passport.js and MongoDB session store",
-      "Cron jobs for scheduled tasks and automation",
-    ],
-  },
   {
     title: "FoxTech",
     description:
@@ -225,18 +249,6 @@ export const projectsData = [
     ],
   },
   {
-    title: "Super Portfolio",
-    description:
-      "A Portfolio I made before realising I'm not a 12 year old. Still, it showcases my skills in an original, fun, and interactive way.",
-    tags: ["React", "Javascript", "Tailwind", "HTML", "Custom CSS"],
-    imageUrl: superPort,
-    url: "https://super.davidfoxdev.co.uk",
-    functionality: [
-      "Accessibility Features: Enhances usability for all users with ARIA attributes and keyboard navigability, ensuring effective interaction.",
-      "Performance Optimized: Utilizes lazy loading and modern image formats for fast loading times and optimal performance without sacrificing visual quality.",
-    ],
-  },
-  {
     title: "Fox ProMGMT",
     description:
       "A Full-stack project management system. It provides a comprehensive platform for managing projects, clients, and tasks efficiently.",
@@ -247,6 +259,18 @@ export const projectsData = [
       "Project Management: Create, view, update, and delete projects with ease.",
       "Task Management: Break down projects into tasks and assign them to team members.",
       "GraphQL API: Utilize the power of GraphQL for flexible and efficient data querying and manipulation.",
+    ],
+  },
+  {
+    title: "Super Portfolio",
+    description:
+      "A Portfolio I made before realising I'm not a 12 year old. Still, it showcases my skills in an original, fun, and interactive way.",
+    tags: ["React", "Javascript", "Tailwind", "HTML", "Custom CSS"],
+    imageUrl: superPort,
+    url: "https://super.davidfoxdev.co.uk",
+    functionality: [
+      "Accessibility Features: Enhances usability for all users with ARIA attributes and keyboard navigability, ensuring effective interaction.",
+      "Performance Optimized: Utilizes lazy loading and modern image formats for fast loading times and optimal performance without sacrificing visual quality.",
     ],
   },
 ] as const;
