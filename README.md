@@ -128,4 +128,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
+<<<<<<< HEAD
 Thank you for checking out my portfolio! If you have any questions or feedback, feel free to reach out.
+=======
+Thank you for checking out my portfolio! If you have any questions or feedback, feel free to reach out.
+>>>>>>> 86efd5452e015611a72ae458521489ba1e004cbf
